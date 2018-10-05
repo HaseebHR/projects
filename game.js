@@ -70,8 +70,9 @@ var TicTacToe = function(){
           (indices[1] > 2 || indices[1] < 0)){
           console.log("That doesn't exist! Please choose indices between 0 and 2.")
         }
-
-        board[+indices[0]][+indices[1]] = currentPlayer;
+        else {
+          board[+indices[0]][+indices[1]] = currentPlayer;
+        }
 
       } while((indices[0] > 2 || indices[0] < 0) ||
               (indices[1] > 2 || indices[1] < 0));
